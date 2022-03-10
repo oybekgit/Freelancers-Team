@@ -7,7 +7,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		}, 100);
 	}, 2000);
 
-	/* var soniyaa = 0
+	var soniyaa = 0
 	function foiz() {
 		soniyaa++
 		if (soniyaa < 100) {
@@ -18,17 +18,17 @@ window.addEventListener('DOMContentLoaded', () => {
 			}, 5);
 		}
 	}
-	foiz() */
+	foiz()
 })
-window.addEventListener('DOMContentLoaded', () => {
-	/* let loader = document.querySelector('.loader')
+/* window.addEventListener('DOMContentLoaded', () => {
+	let loader = document.querySelector('.loader')
 	setTimeout(() => {
 		loader.style.opacity = '0'
 		setTimeout(() => {
 			loader.style.display = 'none'
 		}, 100);
 	}, 1500);
- */
+
 	var soniyaa = 0
 	function foiz() {
 		soniyaa++
@@ -41,7 +41,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		}
 	}
 	foiz()
-})
+}) */
 
 let nav = document.querySelector('.nav');
 let navCont = document.querySelector('.nav__container');
