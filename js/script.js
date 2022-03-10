@@ -5,9 +5,9 @@ window.addEventListener('DOMContentLoaded', () => {
 		setTimeout(() => {
 			loader.style.display = 'none'
 		}, 100);
-	}, 1500);
+	}, 2000);
 
-	var soniyaa = 0
+	/* var soniyaa = 0
 	function foiz() {
 		soniyaa++
 		if (soniyaa < 100) {
@@ -16,6 +16,28 @@ window.addEventListener('DOMContentLoaded', () => {
 				//	console.log(soniyaa);
 				document.querySelector('.foiz').innerHTML = soniyaa + '%'
 			}, 5);
+		}
+	}
+	foiz() */
+})
+window.addEventListener('DOMContentLoaded', () => {
+	/* let loader = document.querySelector('.loader')
+	setTimeout(() => {
+		loader.style.opacity = '0'
+		setTimeout(() => {
+			loader.style.display = 'none'
+		}, 100);
+	}, 1500);
+ */
+	var soniyaa = 0
+	function foiz() {
+		soniyaa++
+		if (soniyaa < 100) {
+			setTimeout(() => {
+				foiz()
+				//	console.log(soniyaa);
+				document.querySelector('.foiz').innerHTML = soniyaa + '%'
+			}, 15);
 		}
 	}
 	foiz()
@@ -40,7 +62,7 @@ window.addEventListener('scroll', () => {
 		nav.style.backgroundColor = 'rgb(211, 230, 255)'
 		nav.style.boxShadow = '0px 8px 10px rgba(0, 5, 36, 0.15)'
 	} if (window.scrollY < 300) {
-		nav.style.top = '60px'
+		nav.style.top = '40px'
 		nav.style.position = 'absolute'
 		scrollBtn.classList.remove('show')
 		nav.style.backgroundColor = 'unset'
@@ -80,8 +102,12 @@ if (window.innerWidth <= 375) {
 				<a href="#!" class="fab fa-instagram"></a>
 				<a href="#!" class="fab fa-telegram-plane"></a>
 			</div>`
+
+
 }
 
+
+// scroll reveal
 ScrollReveal({
 	reset: true,
 	distance: '250px',
@@ -97,5 +123,5 @@ ScrollReveal().reveal('.header__foto', { delay: 600, origin: 'top', distance: '3
 // counterUp
 $(".count").counterUp({
 	delay: 10,
-	time: 800
+	time: 1500
 });
