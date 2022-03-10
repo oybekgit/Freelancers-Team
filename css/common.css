@@ -124,7 +124,7 @@ li {
         background: blue;
         top: 0;
         left: 0;
-        animation: loadingBox 1.5s both;
+        animation: loadingBox 2s both;
 }
 
 @keyframes loadingBox {
@@ -301,9 +301,9 @@ li {
 @media (prefers-color-scheme: dark) {
 
         /*   :root {
-                 --body: grey;
+              --body: grey;
         }
- */
+        */
 }
 
 
